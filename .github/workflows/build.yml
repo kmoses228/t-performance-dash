@@ -29,6 +29,6 @@ jobs:
           npx --yes package-lock-utd@1.1.0
       - name: Fully build frontend code
         run: |
-          curl -sSL https://install.python-poetry.org | python3 -
+          pipx install poetry
           npm ci
           npm run build
